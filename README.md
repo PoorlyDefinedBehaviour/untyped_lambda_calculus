@@ -1,3 +1,4 @@
+```console
 --- grammar ---
 term ::= terms:
 x variable
@@ -105,3 +106,4 @@ omega = (\x. x x) (\x. x x) // divergent combinator
 fix = \f. (\g. f (\y. g g y)) (\g. f (\y. g g y))
 
 Y = \f. (\g. f(g g)) (\g. f(g g)) // simpler call-by-name fixed point combinator
+```
